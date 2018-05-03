@@ -1,0 +1,12 @@
+---
+
+- name: Update apt-get cache
+  shell: apt-get update -y
+
+- name: Install list of packages
+  apt: name={{item}} state=installed
+  with_items:
+       - apache2
+
+- name: Apache service state
+  service: name=apache2 state=started enabled=yes

@@ -1,0 +1,8 @@
+- name:  APACHE Installation
+  hosts: webserver
+  gather_facts: no
+  sudo: yes
+  roles:
+    - httpd
+  tags:
+    - httpd
