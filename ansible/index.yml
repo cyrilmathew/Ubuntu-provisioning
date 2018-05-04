@@ -4,5 +4,16 @@
   sudo: yes
   roles:
     - httpd
+    - sshd
   tags:
     - httpd
+    - sshd
+
+- name:  SSH Tuning
+  hosts: webserver
+  gather_facts: no
+  sudo: yes
+  roles:
+    - sshd
+  tags:
+    - sshd

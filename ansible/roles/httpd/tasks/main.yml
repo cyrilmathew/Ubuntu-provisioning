@@ -8,5 +8,8 @@
   with_items:
        - apache2
 
+- name: Display the MOTD
+  shell: echo "Hello Assurity DevOps" > /var/www/html/index.html
+
 - name: Apache service state
   service: name=apache2 state=started enabled=yes

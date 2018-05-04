@@ -5,6 +5,7 @@ echo "Welcome to Ubuntu 16.04 Provisioning"
 echo "------------------------------------"
 
 ROOT_DIR=$PWD
+export ANSIBLE_HOST_KEY_CHECKING=False
 
 terra_apply() {
 cd $ROOT_DIR/terraform
