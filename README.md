@@ -30,14 +30,13 @@ Working
 Steps to execute
 ----------------
 
-git pull https://github.com/cyrilmathew/Ubuntu-provisioning.git
+git clone https://github.com/cyrilmathew/Ubuntu-provisioning.git
 
-cd Ubuntu-provisioning/
+cd Ubuntu-provisioning/terraform
 
-ssh-keygen -f mykey
+ssh-keygen -f terraform/mykey
 
-chmod 400 mykey 
+chmod 400 terraform/mykey
 
 bash ubuntu.sh
-
 

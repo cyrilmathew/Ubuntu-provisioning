@@ -9,6 +9,7 @@ export ANSIBLE_HOST_KEY_CHECKING=False
 
 terra_apply() {
 cd $ROOT_DIR/terraform
+terraform init
 terraform apply
 
 
@@ -31,6 +32,7 @@ done
 
 terra_destroy() {
 cd $ROOT_DIR/terraform
+terraform init
 terraform destroy
 }
 
