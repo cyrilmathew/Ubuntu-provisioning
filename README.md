@@ -32,7 +32,7 @@ Steps to execute
 
 git clone https://github.com/cyrilmathew/Ubuntu-provisioning.git
 
-cd Ubuntu-provisioning/terraform
+cd Ubuntu-provisioning
 
 ssh-keygen -f terraform/mykey
 
